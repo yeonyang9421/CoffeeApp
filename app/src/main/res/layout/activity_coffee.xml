@@ -4,61 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CoffeeActivity"
+    android:layout_margin="8dp"
     android:orientation="vertical"
-    android:layout_margin="8dp">
+    tools:context=".CoffeeActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" QUANTITY"
-        />
+        android:text=" QUANTITY" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-     <Button
-        android:id="@+id/buttonminus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-"/>
+
+        <Button
+            android:id="@+id/buttonminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
         <TextView
-            android:text="0"
-            android:layout_margin="8dp"
             android:id="@+id/textviewcount"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/buttonplus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
     </LinearLayout>
+
     <CheckBox
-        android:text="휘핑 크림 추가 여부"
         android:id="@+id/cream_check"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="휘핑 크림 추가 여부" />
 
     <TextView
-        android:padding="16dp"
         android:id="@+id/textprice"
-        android:text="price"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="price" />
 
     <TextView
         android:id="@+id/textresutl"
-        android:text="결과"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="결과" />
+
     <EditText
-        android:hint="코맨트를 달아주세요"
         android:id="@+id/comment_edit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="코맨트를 달아주세요" />
+
     <Button
         android:id="@+id/buttonOrder"
-        android:text="ORDER"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="ORDER" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp" />
+
 </LinearLayout>

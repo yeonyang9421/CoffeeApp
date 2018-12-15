@@ -7,14 +7,17 @@
         android:icon="@drawable/capuccino"
         app:showAsAction="always"/>
     <item
-        android:icon="@drawable/moca"
+        android:id="@+id/action_sound"
+        android:icon="@drawable/music"
         android:title="Item"
         app:showAsAction="always" />
     <item
-        android:icon="@drawable/americano"
+        android:id="@+id/action_timer"
+        android:icon="@drawable/timer"
         android:title="Item"
         app:showAsAction="always" />
     <item
+        android:id="@+id/action_table"
         android:icon="@drawable/latte"
         android:title="Item"
         app:showAsAction="always" />
