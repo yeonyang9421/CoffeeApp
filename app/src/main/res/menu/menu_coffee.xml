@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_setting"
+        android:title="설정"
+        android:icon="@drawable/capuccino"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/moca"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/americano"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/latte"
+        android:title="Item"
+        app:showAsAction="always" />
+
+</menu>

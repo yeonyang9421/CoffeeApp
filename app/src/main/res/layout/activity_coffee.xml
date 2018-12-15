@@ -34,13 +34,11 @@
         android:text="+"/>
     </LinearLayout>
     <CheckBox
+        android:text="휘핑 크림 추가 여부"
         android:id="@+id/cream_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <EditText
-        android:id="@+id/comment_edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
     <TextView
         android:padding="16dp"
         android:id="@+id/textprice"
@@ -52,6 +50,11 @@
         android:id="@+id/textresutl"
         android:text="결과"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="코맨트를 달아주세요"
+        android:id="@+id/comment_edit"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
         android:id="@+id/buttonOrder"
