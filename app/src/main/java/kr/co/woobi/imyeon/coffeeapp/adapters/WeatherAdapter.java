@@ -78,7 +78,7 @@ public class WeatherAdapter extends BaseAdapter {
 
         //홀수줄에 파란색 짝수줄에 하얀색
         if (position % 2 == 1) {
-            convertView.setBackgroundColor(Color.BLUE);
+            convertView.setBackgroundColor(213);
         } else {
             convertView.setBackgroundColor(Color.WHITE);
         }
