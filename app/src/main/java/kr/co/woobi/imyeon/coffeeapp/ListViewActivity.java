@@ -40,6 +40,7 @@ public class ListViewActivity extends AppCompatActivity {
         addItem("Intent 응용", "회원가입", SignUpExamActivity.class);
         addItem("암시적 인텐트", "전화걸기", ImplicitActivity.class);
         addItem("웹브라우저", "WebView", ImplicitActivity.class);
+        addItem("날씨앱", "모델클래스를 활용하여 BaseAdapter 연습", WeatherActivity.class);
 
 
         MyAdapter adapter = new MyAdapter(mDataList);
