@@ -103,5 +103,4 @@ public class WeatherAdapter extends BaseAdapter {
         TextView textLocation;
         TextView textTemperature;
     }
-
 }
