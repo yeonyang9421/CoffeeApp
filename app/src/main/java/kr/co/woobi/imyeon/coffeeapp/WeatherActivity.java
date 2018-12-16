@@ -1,6 +1,7 @@
 package kr.co.woobi.imyeon.coffeeapp;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,7 @@ import java.util.List;
 import kr.co.woobi.imyeon.coffeeapp.adapters.WeatherAdapter;
 import kr.co.woobi.imyeon.coffeeapp.models.Weather;
 
-public class WeatherActivity extends AppCompatActivity  {
+public class WeatherActivity extends AppCompatActivity  implements AdapterView.OnItemClickListener{
     private ListView mListView;
     private WeatherAdapter mAdapter;
 
@@ -46,12 +47,15 @@ public class WeatherActivity extends AppCompatActivity  {
         //어댑터
         mAdapter =new WeatherAdapter(this, weatherList);
         mListView.setAdapter(mAdapter);
-//        mListView.setOnItemClickListener(this);
+        mListView.setOnItemClickListener(this);
     }
 
 
-//    @Override
-//    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//        mAdapter.setSelect(position);
-//    }
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        mAdapter.setSelect(position);
+
+        //데이터가 변경됨을 알려서 리프레시하게 함
+        mAdapter.notifyDataSetChanged();
+    }
 }
