@@ -30,6 +30,17 @@ public class LifeCycleActivity extends AppCompatActivity {
         }
     }
 
+    //복원하는 또다른 콜백함수 이니까 알아두라고
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+//        //복원
+//        if(savedInstanceState !=null){
+//            mScore=savedInstanceState.getInt("score");
+//            setScore(mScore);
+//        }
+    }
+
     private void setScore(int score) {
         mScoreTextView.setText("점수 : " + score);
     }
@@ -81,7 +92,6 @@ public class LifeCycleActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState: ");
-
         outState.putInt("score", mScore);
     }
 }

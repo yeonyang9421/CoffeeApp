@@ -41,8 +41,7 @@
         <activity android:name=".activities.OpenAccountActivity" />
         <activity android:name=".activities.CheckAccountActivity" />
         <activity android:name=".activities.AdminModeActivity" />
-        <activity android:name=".activities.LifeCycleActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activities.LifeCycleActivity"></activity>
     </application>
 
 </manifest>
