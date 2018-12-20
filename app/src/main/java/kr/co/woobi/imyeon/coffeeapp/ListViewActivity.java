@@ -12,13 +12,21 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import kr.co.woobi.imyeon.coffeeapp.activities.BankActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.CoffeeActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.ImplicitActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.IntentExamActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.MemoActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.SignUpExamActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.StartActivityResult;
+import kr.co.woobi.imyeon.coffeeapp.activities.WeatherActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.WebBrowserActivity;
 
 public class ListViewActivity extends AppCompatActivity {
 

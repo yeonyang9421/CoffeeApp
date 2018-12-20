@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +16,8 @@ import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import kr.co.woobi.imyeon.coffeeapp.R;
 
 public class WebBrowserActivity extends AppCompatActivity {
     EditText mEditUrl;

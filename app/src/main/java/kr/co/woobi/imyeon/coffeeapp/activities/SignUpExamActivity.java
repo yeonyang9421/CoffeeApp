@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import kr.co.woobi.imyeon.coffeeapp.R;
 
 
 public class SignUpExamActivity extends Activity implements View.OnClickListener {

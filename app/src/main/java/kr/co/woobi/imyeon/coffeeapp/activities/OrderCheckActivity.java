@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import kr.co.woobi.imyeon.coffeeapp.R;
 
 public class OrderCheckActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String TAG = OrderCheckActivity.class.getSimpleName();

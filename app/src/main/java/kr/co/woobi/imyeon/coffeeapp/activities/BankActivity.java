@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 
+import kr.co.woobi.imyeon.coffeeapp.R;
 import kr.co.woobi.imyeon.coffeeapp.managers.Bank;
 
 public class BankActivity extends AppCompatActivity {

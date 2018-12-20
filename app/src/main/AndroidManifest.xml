@@ -11,54 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CoffeeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.CoffeeActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".OrderCheckActivity" />
-        <activity android:name=".StartActivityResult">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.OrderCheckActivity" />
+        <activity android:name=".activities.StartActivityResult">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".TargetActivity" />
-        <activity android:name=".IntentExamActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.TargetActivity" />
+        <activity android:name=".activities.IntentExamActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".IntentExam2Activity" />
+        <activity android:name=".activities.IntentExam2Activity" />
         <activity
-            android:name=".ImplicitActivity"
+            android:name=".activities.ImplicitActivity"
             android:label="@string/title_activity_implicit"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".SignUpExamActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.SignUpExamActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".SignUpExamTargetActivity" />
-        <activity android:name=".WebBrowserActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.SignUpExamTargetActivity" />
+        <activity android:name=".activities.WebBrowserActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ListViewActivity">
             <intent-filter>
@@ -67,34 +43,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WeatherActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.WeatherActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
-            android:name=".MemoActivity"
+            android:name=".activities.MemoActivity"
             android:label="@string/title_activity_memo"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".Memo2Activity" />
-        <activity android:name=".BankActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.Memo2Activity" />
+        <activity android:name=".activities.BankActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".OpenAccountActivity" />
-        <activity android:name=".CheckAccountActivity" />
-        <activity android:name=".AdminModeActivity"></activity>
+        <activity android:name=".activities.OpenAccountActivity" />
+        <activity android:name=".activities.CheckAccountActivity" />
+        <activity android:name=".activities.AdminModeActivity"></activity>
     </application>
 
 </manifest>

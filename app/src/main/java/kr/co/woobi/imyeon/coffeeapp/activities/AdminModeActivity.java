@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import kr.co.woobi.imyeon.coffeeapp.R;
 import kr.co.woobi.imyeon.coffeeapp.managers.Bank;
 import kr.co.woobi.imyeon.coffeeapp.models.Account;
 import kr.co.woobi.imyeon.coffeeapp.models.Memo;

@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,6 +10,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import kr.co.woobi.imyeon.coffeeapp.R;
 
 public class ImplicitActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText mUrlEditText, mPhoneEditText;

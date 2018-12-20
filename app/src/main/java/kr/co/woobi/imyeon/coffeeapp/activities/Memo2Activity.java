@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.content.Intent;
 import android.support.annotation.Nullable;
@@ -12,6 +12,7 @@ import android.widget.Toolbar;
 
 import java.util.PropertyResourceBundle;
 
+import kr.co.woobi.imyeon.coffeeapp.R;
 import kr.co.woobi.imyeon.coffeeapp.models.Memo;
 
 public class Memo2Activity extends AppCompatActivity {

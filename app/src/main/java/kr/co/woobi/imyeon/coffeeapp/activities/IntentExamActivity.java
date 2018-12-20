@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.content.Intent;
 import android.support.annotation.Nullable;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import kr.co.woobi.imyeon.coffeeapp.R;
 
 public class IntentExamActivity extends AppCompatActivity implements View.OnClickListener {
     public static final int REQUEST_CODE = 1000;

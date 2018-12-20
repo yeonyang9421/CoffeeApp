@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.content.Intent;
 
@@ -19,6 +19,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import kr.co.woobi.imyeon.coffeeapp.R;
 
 public class CoffeeActivity extends AppCompatActivity implements View.OnClickListener {
 

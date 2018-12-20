@@ -1,4 +1,4 @@
-package kr.co.woobi.imyeon.coffeeapp;
+package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
+import kr.co.woobi.imyeon.coffeeapp.R;
 import kr.co.woobi.imyeon.coffeeapp.adapters.WeatherAdapter;
 import kr.co.woobi.imyeon.coffeeapp.models.Weather;
 

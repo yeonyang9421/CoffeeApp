@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntentExam2Activity"
+    tools:context=".activities.IntentExam2Activity"
     android:orientation="vertical">
 <Button
     android:id="@+id/button_custom"
