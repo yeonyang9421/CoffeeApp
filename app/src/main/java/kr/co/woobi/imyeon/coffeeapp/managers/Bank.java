@@ -35,7 +35,7 @@ public class Bank {
      * @param account 개설 할 계좌 정보
      */
     public void open(Account account) {
-
+        mAccountList.add(account);
     }
 
 
@@ -47,6 +47,11 @@ public class Bank {
      * @return 없으면 null , 있으면 해당계좌
      */
     public Account login(String id, String password) {
+        for(Account account : mAccountList){
+            if(account.getId().equals(id)&& account.getPassword().equals(password)){
+                return account;
+            }
+        }
         return null;
     }
 
@@ -59,6 +64,9 @@ public class Bank {
      * @return 관리자면 true
      */
     public boolean isAdmin(String id, String password) {
+        if(ADMIN_ID.equals(id) && ADMIN_PASSWORD.equals(password)){
+            return  true;
+        }
         return false;
     }
 

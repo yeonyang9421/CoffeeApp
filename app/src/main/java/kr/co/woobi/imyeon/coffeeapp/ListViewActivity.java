@@ -43,6 +43,7 @@ public class ListViewActivity extends AppCompatActivity {
         addItem("웹브라우저", "WebView", WebBrowserActivity.class);
         addItem("날씨앱", "모델클래스를 활용하여 BaseAdapter 연습", WeatherActivity.class);
         addItem("메모장", "메모장연습문제", MemoActivity.class);
+        addItem("은행 예제", "은행앱연습문제", BankActivity.class);
 
 
         Collections.reverse(mDataList);

@@ -84,7 +84,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Memo2Activity"></activity>
+        <activity android:name=".Memo2Activity" />
+        <activity android:name=".BankActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OpenAccountActivity" />
+        <activity android:name=".CheckAccountActivity" />
+        <activity android:name=".AdminModeActivity"></activity>
     </application>
 
 </manifest>

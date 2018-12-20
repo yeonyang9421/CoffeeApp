@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:onClick="onClick"
+        android:text="개좌 개설"
+        android:textSize="40dp"
+        android:id="@+id/button_account_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:onClick="onClick"
+        android:text="개좌 조회"
+        android:textSize="40dp"
+        android:id="@+id/button_account_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:onClick="onClick"
+        android:text="관리자 모드"
+        android:textSize="40dp"
+        android:id="@+id/button_account_admin"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="onClick"
+        android:text="종 료"
+        android:textSize="40dp"
+        android:id="@+id/button_account_exit"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
