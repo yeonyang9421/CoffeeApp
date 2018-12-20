@@ -22,6 +22,7 @@ import kr.co.woobi.imyeon.coffeeapp.activities.BankActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.CoffeeActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.ImplicitActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.IntentExamActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.LifeCycleActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.MemoActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.SignUpExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.StartActivityResult;
@@ -52,6 +53,7 @@ public class ListViewActivity extends AppCompatActivity {
         addItem("날씨앱", "모델클래스를 활용하여 BaseAdapter 연습", WeatherActivity.class);
         addItem("메모장", "메모장연습문제", MemoActivity.class);
         addItem("은행 예제", "은행앱연습문제", BankActivity.class);
+        addItem("액티비티 라이프사이클", "액티비티사이클", LifeCycleActivity.class);
 
 
         Collections.reverse(mDataList);

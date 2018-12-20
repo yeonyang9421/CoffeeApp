@@ -11,31 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.CoffeeActivity">
-
-        </activity>
+        <activity android:name=".activities.CoffeeActivity"></activity>
         <activity android:name=".activities.OrderCheckActivity" />
-        <activity android:name=".activities.StartActivityResult">
-
-        </activity>
+        <activity android:name=".activities.StartActivityResult"></activity>
         <activity android:name=".activities.TargetActivity" />
-        <activity android:name=".activities.IntentExamActivity">
-
-        </activity>
+        <activity android:name=".activities.IntentExamActivity"></activity>
         <activity android:name=".activities.IntentExam2Activity" />
         <activity
             android:name=".activities.ImplicitActivity"
             android:label="@string/title_activity_implicit"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".activities.SignUpExamActivity">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activities.SignUpExamActivity"></activity>
         <activity android:name=".activities.SignUpExamTargetActivity" />
-        <activity android:name=".activities.WebBrowserActivity">
-
-        </activity>
+        <activity android:name=".activities.WebBrowserActivity"></activity>
         <activity android:name=".ListViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,22 +31,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.WeatherActivity">
-
-        </activity>
+        <activity android:name=".activities.WeatherActivity"></activity>
         <activity
             android:name=".activities.MemoActivity"
             android:label="@string/title_activity_memo"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".activities.Memo2Activity" />
-        <activity android:name=".activities.BankActivity">
-
-        </activity>
+        <activity android:name=".activities.BankActivity"></activity>
         <activity android:name=".activities.OpenAccountActivity" />
         <activity android:name=".activities.CheckAccountActivity" />
-        <activity android:name=".activities.AdminModeActivity"></activity>
+        <activity android:name=".activities.AdminModeActivity" />
+        <activity android:name=".activities.LifeCycleActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
