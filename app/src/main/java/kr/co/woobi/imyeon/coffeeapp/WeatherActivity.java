@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ import kr.co.woobi.imyeon.coffeeapp.models.Weather;
 public class WeatherActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener {
     private ListView mListView;
     private  GridView mGridView;
+    private Spinner mSpinner;
     private WeatherAdapter mAdapter;
     private List<Weather> mWeatherList;
 
@@ -28,6 +30,7 @@ public class WeatherActivity extends AppCompatActivity implements AdapterView.On
 
         mListView = findViewById(R.id.listview_weather);
         mGridView=findViewById(R.id.gridview);
+        mSpinner=findViewById(R.id.spinner);
 
         mWeatherList = new ArrayList<>();
 
@@ -50,8 +53,13 @@ public class WeatherActivity extends AppCompatActivity implements AdapterView.On
 
         //어댑터
         mAdapter = new WeatherAdapter(this, mWeatherList);
+
+        //어댑터를 뷰에 설정
         mListView.setAdapter(mAdapter);
         mGridView.setAdapter(mAdapter);
+        mSpinner.setAdapter(mAdapter);
+
+        //이벤트처리
         mListView.setOnItemClickListener(this);
         mListView.setOnItemLongClickListener(this);
     }

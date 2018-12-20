@@ -15,6 +15,7 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -39,8 +40,11 @@ public class ListViewActivity extends AppCompatActivity {
         addItem("Intent 기초2", "고객관리버튼 토스트로 넘기기", IntentExamActivity.class);
         addItem("Intent 응용", "회원가입", SignUpExamActivity.class);
         addItem("암시적 인텐트", "전화걸기", ImplicitActivity.class);
-        addItem("웹브라우저", "WebView", ImplicitActivity.class);
+        addItem("웹브라우저", "WebView", WebBrowserActivity.class);
         addItem("날씨앱", "모델클래스를 활용하여 BaseAdapter 연습", WeatherActivity.class);
+
+
+        Collections.reverse(mDataList);
 
 
         MyAdapter adapter = new MyAdapter(mDataList);
