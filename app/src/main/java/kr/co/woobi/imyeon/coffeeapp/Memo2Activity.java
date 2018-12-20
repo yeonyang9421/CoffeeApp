@@ -8,11 +8,15 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.Toolbar;
 
 import java.util.PropertyResourceBundle;
 
+import kr.co.woobi.imyeon.coffeeapp.models.Memo;
+
 public class Memo2Activity extends AppCompatActivity {
     private EditText mEdtitTitle, mEditContent;
+    private  long mId=-1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,20 @@ public class Memo2Activity extends AppCompatActivity {
 
         mEdtitTitle = findViewById(R.id.edit_title);
         mEditContent = findViewById(R.id.edit_content);
+
+//        Toolbar toolbar=findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+
+        if(getIntent()!=null){
+            if(getIntent().hasExtra("memo")){
+                //보여주기
+                mId=getIntent().getLongExtra("id",-1);
+                Memo memo=(Memo)getIntent().getSerializableExtra("memo");
+                mEdtitTitle.setText(memo.getTitle());
+                mEditContent.setText(memo.getContent());
+
+            }
+        }
     }
 
     //메뉴를 붙이는 부분
@@ -56,9 +74,24 @@ public class Memo2Activity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.putExtra("title", mEdtitTitle.getText().toString());
         intent.putExtra("content", mEditContent.getText().toString());
+        intent.putExtra("id",mId);
         setResult(RESULT_OK, intent);
         finish();
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==1000 && resultCode==RESULT_OK && data !=null){
+            if(getIntent().hasExtra("memo")){
+                //보여주기
+                mId=getIntent().getLongExtra("id",-1);
+                Memo memo=(Memo)getIntent().getSerializableExtra("memo");
+                mEdtitTitle.setText(memo.getTitle());
+                mEditContent.setText(memo.getContent());
+
+            }
+        }
+    }
 }
 
