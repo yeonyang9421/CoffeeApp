@@ -24,6 +24,7 @@ import kr.co.woobi.imyeon.coffeeapp.activities.ColorFragmentActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.ImplicitActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.IntentExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.LifeCycleActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.ListViewExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.MemoActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.SignUpExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.StartActivityResult;
@@ -57,6 +58,7 @@ public class ListViewActivity extends AppCompatActivity {
         addItem("은행 예제", "은행앱연습문제", BankActivity.class);
         addItem("액티비티 라이프사이클", "액티비티사이클", LifeCycleActivity.class);
         addItem("Fragment", "ColorFragment", ColorFragmentActivity.class);
+        addItem("listView연습", "리스트뷰연습", ListViewExamActivity.class);
 
 
         Collections.reverse(mDataList);
