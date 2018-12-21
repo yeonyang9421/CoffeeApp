@@ -20,6 +20,7 @@ import java.util.Map;
 
 import kr.co.woobi.imyeon.coffeeapp.activities.BankActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.CoffeeActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.ColorFragmentActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.ImplicitActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.IntentExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.LifeCycleActivity;
@@ -28,6 +29,7 @@ import kr.co.woobi.imyeon.coffeeapp.activities.SignUpExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.StartActivityResult;
 import kr.co.woobi.imyeon.coffeeapp.activities.WeatherActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.WebBrowserActivity;
+import kr.co.woobi.imyeon.coffeeapp.fragments.ColorFragment;
 
 public class ListViewActivity extends AppCompatActivity {
 
@@ -54,6 +56,7 @@ public class ListViewActivity extends AppCompatActivity {
         addItem("메모장", "메모장연습문제", MemoActivity.class);
         addItem("은행 예제", "은행앱연습문제", BankActivity.class);
         addItem("액티비티 라이프사이클", "액티비티사이클", LifeCycleActivity.class);
+        addItem("Fragment", "ColorFragment", ColorFragmentActivity.class);
 
 
         Collections.reverse(mDataList);
