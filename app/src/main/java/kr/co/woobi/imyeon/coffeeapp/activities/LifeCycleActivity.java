@@ -1,5 +1,7 @@
 package kr.co.woobi.imyeon.coffeeapp.activities;
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,7 +22,7 @@ public class LifeCycleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_life_cycle);
 
         mScoreTextView=findViewById(R.id.text_score);
-        setScore(mScore);
+
         Log.d(TAG, "onCreate: ");
 
         //복원
@@ -28,6 +30,12 @@ public class LifeCycleActivity extends AppCompatActivity {
             mScore=savedInstanceState.getInt("score");
             setScore(mScore);
         }
+
+        //읽어오기
+        SharedPreferences sharedPreferences=PreferenceManager.getDefaultSharedPreferences(this);
+        mScore=sharedPreferences.getInt("score",0);
+        setScore(mScore);
+
     }
 
     //복원하는 또다른 콜백함수 이니까 알아두라고
@@ -39,6 +47,9 @@ public class LifeCycleActivity extends AppCompatActivity {
 //            mScore=savedInstanceState.getInt("score");
 //            setScore(mScore);
 //        }
+
+
+
     }
 
     private void setScore(int score) {
@@ -62,6 +73,13 @@ public class LifeCycleActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         Log.d(TAG,"onPause: ");
+
+        //저장
+        SharedPreferences sharedPreferences=PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putInt("score",mScore);
+        // editor.commit(); 동기(sync)
+        editor.apply();// 비동기(async)
     }
 
     @Override
