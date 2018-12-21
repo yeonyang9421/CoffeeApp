@@ -21,6 +21,7 @@ import java.util.Map;
 import kr.co.woobi.imyeon.coffeeapp.activities.BankActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.CoffeeActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.ColorFragmentActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.FragmentExam1Activity;
 import kr.co.woobi.imyeon.coffeeapp.activities.ImplicitActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.IntentExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.LifeCycleActivity;
@@ -58,11 +59,11 @@ public class ListViewActivity extends AppCompatActivity {
         addItem("은행 예제", "은행앱연습문제", BankActivity.class);
         addItem("액티비티 라이프사이클", "액티비티사이클", LifeCycleActivity.class);
         addItem("Fragment", "ColorFragment", ColorFragmentActivity.class);
-        addItem("listView연습", "리스트뷰연습", ListViewExamActivity.class);
+        addItem("리스트뷰로 액티비티 재사용", "액티비티재사용", ListViewExamActivity.class);
+        addItem("Fragment연습문제", "버튼으로 재사용되는 프레그먼트 배경색 바꾸기", FragmentExam1Activity.class);
 
 
         Collections.reverse(mDataList);
-
 
         MyAdapter adapter = new MyAdapter(mDataList);
         mListView.setAdapter(adapter);

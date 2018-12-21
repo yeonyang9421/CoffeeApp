@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import kr.co.woobi.imyeon.coffeeapp.R;
 
 public class ColorFragment extends Fragment {
-    private  int mColor = Color.MAGENTA;
+    private  int mColor = Color.WHITE;
 
     public ColorFragment() {
     }
