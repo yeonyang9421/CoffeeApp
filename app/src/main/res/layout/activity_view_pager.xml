@@ -11,9 +11,10 @@
         android:id="@+id/tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:tabBackground="@drawable/tab_background"
         android:background="@color/colorPrimaryDark"
         app:tabIndicatorColor="@android:color/background_light"
-        app:tabSelectedTextColor="@android:color/background_light"
+        app:tabSelectedTextColor="@android:color/darker_gray"
         app:tabTextColor="@color/colorPrimary" />
 
     <android.support.v4.view.ViewPager
