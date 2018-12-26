@@ -1,6 +1,8 @@
 package kr.co.woobi.imyeon.coffeeapp.activities;
 
 import android.graphics.Color;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -16,6 +18,7 @@ import kr.co.woobi.imyeon.coffeeapp.fragments.ColorFragment;
 public class ViewPagerActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
+    private TabLayout mTabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +26,12 @@ public class ViewPagerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_pager);
 
         mViewPager=findViewById(R.id.pager);
+        mTabLayout=findViewById(R.id.tab);
+
         MyPagerApdapter adapter=new MyPagerApdapter(getSupportFragmentManager());
         mViewPager.setAdapter(adapter);
+
+        mTabLayout.setupWithViewPager(mViewPager);
 
     }
 
@@ -53,6 +60,25 @@ public class ViewPagerActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             return 5;
+        }
+
+        //제목 표시
+        @Nullable
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position){
+                case 0:
+                    return "RED";
+                case 1:
+                    return "CYAN";
+                case 2:
+                    return "GRAY";
+                case 3:
+                    return "GREEN";
+                case 4:
+                    return "YELLOW";
+            }
+            return  null;
         }
     }
 }
