@@ -22,6 +22,7 @@ import kr.co.woobi.imyeon.coffeeapp.activities.BankActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.CoffeeActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.ColorFragmentActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.FragmentExam1Activity;
+import kr.co.woobi.imyeon.coffeeapp.activities.ImageFragmentActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.ImplicitActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.IntentExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.LifeCycleActivity;
@@ -29,6 +30,7 @@ import kr.co.woobi.imyeon.coffeeapp.activities.ListViewExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.MemoActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.SignUpExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.StartActivityResult;
+import kr.co.woobi.imyeon.coffeeapp.activities.ViewPagerActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.WeatherActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.WebBrowserActivity;
 import kr.co.woobi.imyeon.coffeeapp.fragments.ColorFragment;
@@ -61,7 +63,8 @@ public class ListViewActivity extends AppCompatActivity {
         addItem("Fragment", "ColorFragment", ColorFragmentActivity.class);
         addItem("리스트뷰로 액티비티 재사용", "액티비티재사용", ListViewExamActivity.class);
         addItem("Fragment연습문제", "버튼으로 재사용되는 프레그먼트 배경색 바꾸기", FragmentExam1Activity.class);
-
+        addItem("프래그먼트 콜백 연습", "CallBack", ImageFragmentActivity.class);
+        addItem("ViewPager", "뷰페이저 - 컬러프래그먼트 재사용해서", ViewPagerActivity.class);
 
         Collections.reverse(mDataList);
 
