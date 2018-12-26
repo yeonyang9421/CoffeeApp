@@ -31,6 +31,7 @@ import kr.co.woobi.imyeon.coffeeapp.activities.MemoActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.SignUpExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.StartActivityResult;
 import kr.co.woobi.imyeon.coffeeapp.activities.ViewPagerActivity;
+import kr.co.woobi.imyeon.coffeeapp.activities.ViewPagerExamActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.WeatherActivity;
 import kr.co.woobi.imyeon.coffeeapp.activities.WebBrowserActivity;
 import kr.co.woobi.imyeon.coffeeapp.fragments.ColorFragment;
@@ -65,7 +66,7 @@ public class ListViewActivity extends AppCompatActivity {
         addItem("Fragment연습문제", "버튼으로 재사용되는 프레그먼트 배경색 바꾸기", FragmentExam1Activity.class);
         addItem("프래그먼트 콜백 연습", "CallBack", ImageFragmentActivity.class);
         addItem("ViewPager", "뷰페이저 - 컬러프래그먼트 재사용해서", ViewPagerActivity.class);
-
+        addItem("ViewPager 와 TabLayout 연습문제풀이", "ViewPager 와 TabLayout", ViewPagerExamActivity.class);
         Collections.reverse(mDataList);
 
         MyAdapter adapter = new MyAdapter(mDataList);
